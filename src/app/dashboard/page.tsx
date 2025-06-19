@@ -16,12 +16,12 @@ import CreateTask from "./create-task";
 import TableFile from "./table-file";
 
 const comments = [
-    { title: "Skydive with Jeff", time: "Jan 12 @ 6pm" },
-    { title: "Sarah's 25th brithday - buy a nice present maybe something nice for her garden", time: "Jan 21 @ all day" },
-    { title: "Doctor's appointment", time: "Jan 22 @ 11am" },
-    { title: "Code Review", time: "Feb 1 @ 9am" },
-    { title: "Marketing Sync", time: "Feb 5 @ 2pm" },
-    { title: "Sprint Planning", time: "Feb 7 @ 8pm" },
+    { title: "Skydive with Jeff", time: "JEFF CAPP" },
+    { title: "Doctor's appointment", time: "WILSON CHILL" },
+    { title: "Code Review", time: "WILSON CHILL" },
+    { title: "Marketing Sync", time: "TREFOR BALD" },
+    { title: "Sprint Planning", time: "ALICE KAYY" },
+    { title: "Nice!", time: "ALICE KAYY" },
 ];
 
 export default function Home() {
@@ -34,12 +34,12 @@ export default function Home() {
                         <ChartBar />
                     </div>
 
-                    <div className="flex w-full justify-between p-6 bg-card text-card-foreground  border border-primary  shadow-sm">
-                        <div className="flex items-center gap-x-4">
-                            <Bell className="text-main" />
+                    <div className="flex w-full justify-between items-center p-6 bg-card text-card-foreground  border border-primary  shadow-sm">
+                        <div className="flex md:items-center  gap-x-4">
+                            <Bell size={20} className="text-main shrink-0 mt-1 md:mt-0 " />
                             System wide notification widget - please update this application, thank you.
                         </div>
-                        <CircleX />
+                        <CircleX size={20} className=" shrink-0" />
                     </div>
 
                     <CreateEvent />
@@ -104,7 +104,9 @@ export default function Home() {
                                     <div key={index} className="flex gap-2 items-center py-3 px-3.5 border border-primary bg-muted">
                                         <UserRound className="shrink-0" size="20" />
                                         <div>
-                                            <div className="font-medium">{event.time}</div>
+                                            <div className="font-medium">
+                                                {event.time} <span className="text-xs font-light">52 minutes ago</span>
+                                            </div>
                                             <div className="text-sm text-muted-foreground">{event.title}</div>
                                         </div>
                                     </div>

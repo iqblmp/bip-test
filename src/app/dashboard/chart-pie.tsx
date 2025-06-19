@@ -43,7 +43,6 @@ export default function ChartPie() {
         <Card className="flex flex-col">
             <CardHeader>
                 <CardTitle className="text-2xl font-semibold">Segments</CardTitle>
-
                 <CardAction>
                     <EllipsisVertical />
                 </CardAction>
