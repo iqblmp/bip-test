@@ -21,7 +21,7 @@ export default function CreateEvent() {
     return (
         <Card className="w-full">
             <CardHeader>
-                <CardTitle className="text-2xl font-semibold">Event</CardTitle>
+                <CardTitle className="text-2xl font-semibold">Events</CardTitle>
 
                 <CardAction>
                     <EllipsisVertical />

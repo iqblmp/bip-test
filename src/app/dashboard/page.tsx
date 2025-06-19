@@ -39,14 +39,14 @@ export default function Home() {
                             <Bell className="text-main" />
                             System wide notification widget - please update this application, thank you.
                         </div>
-
                         <CircleX />
                     </div>
+
                     <CreateEvent />
 
                     <Card className="w-full">
                         <CardHeader>
-                            <CardTitle className="text-2xl font-semibold">Table FIle</CardTitle>
+                            <CardTitle className="text-2xl font-semibold">Manage File</CardTitle>
                             <CardAction>
                                 <EllipsisVertical />
                             </CardAction>
@@ -120,6 +120,7 @@ export default function Home() {
                             </div>
                         </CardFooter>
                     </Card>
+
                     <Card className="w-full">
                         <CardHeader>
                             <CardTitle className="text-2xl font-semibold">Rate</CardTitle>

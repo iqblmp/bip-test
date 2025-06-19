@@ -4,6 +4,7 @@ import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader,
 import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 
 import { Bar, BarChart } from "recharts";
+import type { Props as BarProps } from "recharts/types/cartesian/Bar";
 
 const chartDatas = [
     { name: "Xyz", value: 500 },
@@ -49,7 +50,7 @@ function ChartBar() {
                         <Bar
                             dataKey="value"
                             radius={8}
-                            shape={(props) => {
+                            shape={(props: BarProps) => {
                                 const { x, y, width, height, index } = props;
                                 const fill = index === 4 ? "#31efb8FF" : "#343842FF";
                                 return <rect x={x} y={y} width={width} height={height} fill={fill} rx={4} ry={4} />;
